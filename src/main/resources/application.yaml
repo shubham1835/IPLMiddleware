@@ -1,0 +1,33 @@
+logging:
+  level:
+    com:
+      cdp:
+        alert: INFO
+    root: INFO
+    tomcat: INFO
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+server:
+  port: 8083
+spring:
+  application:
+    name: merchant_middleware
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+  data:
+    mongodb:
+      uri: mongodb+srv://sp-develop:Pass12%21%40@cluster0.bc8ai.mongodb.net/merchant?retryWrites=true&w=majority
+app:
+  version: 1.0.2
+sms:
+  apiKey: 27c20fb3-7343-11eb-a9bc-0200cd936042
+account:
+  bin: 770026
